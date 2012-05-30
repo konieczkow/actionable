@@ -24,7 +24,7 @@ Form submit:
 <div class="js_form_submit" /> 
 ```
 
-Click on div will submit the form (first ancestor form in DOM tree)
+Click on div will submit the form (first ancestor elemrnt of type form in DOM tree)
 
 Link: 
 
