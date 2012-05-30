@@ -1,2 +1,2 @@
-//= require_tree  ./common
+//= require_tree ./common
 //= require  ./actionable
