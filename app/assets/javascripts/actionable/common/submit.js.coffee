@@ -5,5 +5,4 @@ class Submit
 	on_click: (event) ->
 		$(this).parents('form').submit() 
 		event.stopPropagation()
-
-window.Submit = Submit
+		event.preventDefault()
