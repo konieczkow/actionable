@@ -5,13 +5,19 @@ Javascriptless declarative lib for common web page interactions using css classe
 
 ## Installation
 
-Add following to your Gemfile:
+Add following line to your Gemfile:
 
 ```ruby
 gem 'actionable', :git => "git@github.com:aenima/actionable.git"
 ```
 
-And run `bundle install`. 
+Run `bundle install`.
+
+Add following line to application.js or somewhere in the asset pipeline:
+
+```ruby
+*= require actionable
+```
 
 
 ## Usage
