@@ -11,9 +11,7 @@ Add following line to your Gemfile:
 gem 'actionable', :git => "git@github.com:aenima/actionable.git"
 ```
 
-Run `bundle install`.
-
-Add following line to application.js or somewhere in the asset pipeline:
+Run `bundle install`. Add following line to application.js or somewhere in the asset pipeline:
 
 ```ruby
 //= require actionable
