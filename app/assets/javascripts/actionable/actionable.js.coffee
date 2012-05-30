@@ -4,4 +4,4 @@ class Actionable
 		new Submit(".js_form_submit")		
 
 $ ->
-	new ActionableClasses()
+	new Actionable()
