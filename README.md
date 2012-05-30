@@ -16,7 +16,7 @@ Run `bundle install`.
 Add following line to application.js or somewhere in the asset pipeline:
 
 ```ruby
-*= require actionable
+//= require actionable
 ```
 
 
