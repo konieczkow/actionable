@@ -1,3 +1,3 @@
 = Actionable
 
-This project rocks and uses MIT-LICENSE.
+Javascriptless declarative lib for common web page interactions using css classes data tags.
