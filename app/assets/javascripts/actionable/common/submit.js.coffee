@@ -6,3 +6,6 @@ class Submit
 		$(this).parents('form').submit() 
 		event.stopPropagation()
 		event.preventDefault()
+
+
+window.Submit = Submit
