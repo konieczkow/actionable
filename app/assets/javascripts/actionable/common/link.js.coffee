@@ -6,5 +6,8 @@ class Link
 		window.location = $(this).data("link")
 		event.stopPropagation()
 		
+		
+window.Link = Link
+		
     
 
