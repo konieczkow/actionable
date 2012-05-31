@@ -8,7 +8,7 @@ Javascriptless declarative lib for common web page interactions using css classe
 Add following line to your Gemfile:
 
 ```ruby
-gem 'actionable', :git => "git@github.com:aenima/actionable.git"
+gem 'actionable', :git => "git://github.com/aenima/actionable.git"
 ```
 
 Run `bundle install`. Add following line to application.js or somewhere in the asset pipeline:
@@ -28,7 +28,7 @@ Form submit:
 <div class="js_form_submit" /> 
 ```
 
-Click on div will submit the form (first ancestor elemrnt of type form in DOM tree)
+Click on div will submit the form (first ancestor element of type form in DOM tree)
 
 Link: 
 
