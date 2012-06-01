@@ -104,11 +104,15 @@ Now you can create pushable button that will submit a form with following html c
 
 
 ## NEXT TODO
+- focuser
 - class toggler (eg activeable)
 - attribute (eg visibility) toggler
 - class and attributes (eg visibility) on/offer 
-- focuser
 
 ## Backlog
-- fully customizable progress bar (?)
-- fully customizable drop-down (allow including images in items)
+- introduce namespace behavior
+ - copy to clipboard (?)
+- introduce namespace widget (fully customizable)
+ - progress bar (?)
+ - drop-down (allow including images in items)
+ - tooltip
