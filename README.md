@@ -41,5 +41,6 @@ Click on div will redirect browser to url taken from data-link.
 ## TODO
 - pushable
 - disabler
-- toggler
+- class toggler
+- visiblity toggler
 - docs: custom example: button
