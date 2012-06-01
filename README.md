@@ -43,4 +43,6 @@ Click on div will redirect browser to url taken from data-link.
 - disabler
 - class toggler
 - visiblity toggler
+- on/offer class/visiblity
+- remover/closer
 - docs: custom example: button
