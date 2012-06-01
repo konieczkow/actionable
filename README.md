@@ -22,7 +22,7 @@ Run `bundle install`. Add following line to application.js or somewhere in the a
 
 Add classes to html elements to define behaviors. 
 
-Form submit:
+### Form submit:
 
 ```ruby
 <div class="js_form_submit" /> 
@@ -30,10 +30,16 @@ Form submit:
 
 Click on div will submit the form (first ancestor element of type form in DOM tree)
 
-Link: 
+### Link: 
 
 ```ruby
 <div class="js_link" data-link="http://google.com" />
 ```
 
 Click on div will redirect browser to url taken from data-link.
+
+## TODO
+- pushable
+- disabler
+- toggler
+- docs: custom example: button
