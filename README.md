@@ -67,6 +67,14 @@ This behavior can be customized (see Customization), by default it is initialize
   
 First argument is selector of element to react on click. Second is the name of the class to be added/removed. Third is common ancestor in DOM tree of all clickable elements. This is useful if there is more then one set of elements to use with Switcher.
 
+### Focusable: 
+
+Here is example how to intialize focusable:
+
+    	new Focusable(".wrapper", ".input")
+    	
+Click anywhere on element with class 'wrapper' will bring focus to first element inside 'wrapper' that has class '.input'
+
 ## Customization
 
 You can use custom selectors to get various effects. To do so simply create Actionable classes with custom selectors passed to constructor. See examples below:
