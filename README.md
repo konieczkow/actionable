@@ -47,6 +47,26 @@ Click on div will add a class 'pushed' to it, so in inspector it will look like 
     
 Class will be removed as soon as mouse button is up or mouse cursor leaves div area. 
 
+### Switcher: 
+
+    <div class="activable" />
+    <div class="activable" />
+    <div class="activable" />        
+
+Click on div will add a class 'active' to it, so in inspector it will look like this:
+
+    <div class="activable" />
+    <div class="activable active" />
+    <div class="activable" />        
+    
+Class will be removed as soon as you click on any of the other elements.
+
+This behavior can be customized (see Customization), by default it is initialized as follows:
+
+    new Switcher('.activable', "active", 'body')
+  
+First argument is selector of element to react on click. Second is the name of the class to be added/removed. Third is common ancestor in DOM tree of all clickable elements. This is useful if there is more then one set of elements to use with Switcher.
+
 ## Customization
 
 You can use custom selectors to get various effects. To do so simply create Actionable classes with custom selectors passed to constructor. See examples below:

@@ -4,6 +4,7 @@ class Actionable
     new Submit(".js_form_submit")
     new Disable(".disabled")
     new Pushable(".pushable")    
+    new Switcher('.activable')    
     
 $ ->
   new Actionable()
