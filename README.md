@@ -117,3 +117,4 @@ Now you can create pushable button that will submit a form with following html c
  - drop-down (allow including images in items)
  - tooltip
  - scrollbar
+ - radio/checkbox
