@@ -25,7 +25,7 @@ Add classes to html elements to define behaviors.
 
     <div class="js_form_submit" /> 
 
-Click on div will submit the form (first ancestor element of type form in DOM tree)
+Click on div will submit the form (More precisely first ancestor element of type form in DOM tree will be submited)
 
 ### Link: 
 
