@@ -7,17 +7,15 @@ Javascriptless declarative lib for common web page interactions using css classe
 
 Add this line to your application's Gemfile:
 
-  gem 'actionable', :git => "git://github.com/aenima/actionable.git"
-
-
+    gem 'actionable', :git => "git://github.com/aenima/actionable.git"
 
 And then execute:
-  $ bundle install
 
-Add this line to application.js or somewhere in the asset pipeline:
+    $ bundle install
 
-  //= require actionable
+And then add this line to application.js or somewhere in the asset pipeline:
 
+    //= require actionable
 
 
 ## Usage
