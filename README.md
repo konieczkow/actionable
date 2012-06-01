@@ -36,14 +36,26 @@ Click on div will submit the form (first ancestor element of type form in DOM tr
 <div class="js_link" data-link="http://google.com" />
 ```
 
-Click on div will redirect browser to url taken from data-link.
+### Disable: 
+
+        <div class="disable js_link " data-link="http://google.com" />
+
+Click on div will od nothing unless disbale class is removed.
+
+## Custom selectors
+
+To use custom selectors create Actionable classes with custom selectors passed to contructor.  
+
+        new Link(".action-link")
+        new Submit("data[acton='submit'")		
+        new Disable("#fake_button")		
+
+
 
 ## TODO
 - pushable
-- disabler
 - class toggler
 - visiblity toggler
 - onable/offable class/visiblity
 - removable/closable
 - focusable
-- docs: custom example: button
