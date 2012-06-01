@@ -116,3 +116,4 @@ Now you can create pushable button that will submit a form with following html c
  - progress bar (?)
  - drop-down (allow including images in items)
  - tooltip
+ - scrollbar
