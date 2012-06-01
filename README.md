@@ -35,28 +35,60 @@ Click on div will submit the form (first ancestor element of type form in DOM tr
 
     <div class="disable js_link" data-link="http://google.com" />
 
-Click on div will od nothing unless disbale class is removed.
+Click on div will do nothing unless disable class is removed.
 
-## Custom selectors
+### Pushable: 
 
-To use custom selectors create Actionable classes with custom selectors passed to contructor.  
-Add following lines to javascript initalisation:
+    <div class="pushable" />
 
-    new Link(".action-link")
-    new Submit("data[acton='submit'")		
-    new Disable("#fake_button")		
+Click on div will add a class 'pushed' to it, so in inspector it will look like this:
+
+    <div class="pushable pushed" />
     
-Now you can use them as follows:
+Class will be removed as soon as mouse button is up or mouse cursor leaves div area. 
+
+## Customization
+
+You can use custom selectors to get various effects. To do so simply create Actionable classes with custom selectors passed to constructor. See examples below:
+
+### Different classes name:
+
+Add this line to javascript initialization:
+
+    new Link(".action-link");
+
+Now use "action-link" class to mark links in html code:
+    
+    <div class="action-link" data-link="http://google.com" />
+
+### Use data tags instead of classes:
+        
+Add selector with data tag in javascript initialization:
+
+    new Submit("data[acton='submit']");	
+
+And use following code in html:
 
     <div data-action="submit" /> 
-    <div class="action-link" data-link="http://google.com" />
-    <div id="fake_button" class="js_link " data-link="http://google.com" />
+
+### Join multiple behaviors into new ones
+
+Use one css class and join multiple behaviors into one:
+
+    new Pushable(".submit_button");	
+    new Submit(".submit_button");		
+                
+Now you can create pushable button that will submit a form with following html code:
+
+    <div class="submit_button" />
 
 
-## TODO
-- pushable
-- class toggler
-- attribute/visibility toggler
-- onable/offable class/visiblity
-- removable/closable
-- focusable
+## NEXT TODO
+- class toggler (eg activeable)
+- attribute (eg visibility) toggler
+- class and attributes (eg visibility) on/offer 
+- focuser
+
+## Backlog
+- fully customizable progress bar (?)
+- fully customizable drop-down (allow including images in items)
