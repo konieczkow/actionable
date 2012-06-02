@@ -67,6 +67,26 @@ This behavior can be customized (see Customization), by default it is initialize
   
 First argument is selector of element to react on click. Second is the name of the class to be added/removed. Third is common ancestor in DOM tree of all clickable elements. This is useful if there is more then one set of elements to use with Switcher.
 
+### Toggler
+
+Toggler switches visibility or class of an element. Here comes the visibility example:
+
+    <div class="toggler" data-target= "#toggled_div" />
+    
+Click on div with class 'toggler' will toggle '#toggled_div'. If we're talking about toggling visibility, you can add a sliding effect:
+
+    <div class="toggler" data-target= "#toggled_div" data-effect="slide"/>
+
+You can also force toggler to only show '#toggled_div' (not toggle):
+
+    <div class="toggler" data-target= "#toggled_div" data-effect="slide" data-mode="on"/>
+
+Finally you can toggle class. If you don't provide data-target, operation will be performed on clicked element.
+
+    <div class="toggler" data-class= "active" />
+    
+In the example above div of class 'toggler' will toggle it's active state on each click.
+
 ### Focusable: 
 
 Here is example how to intialize focusable:

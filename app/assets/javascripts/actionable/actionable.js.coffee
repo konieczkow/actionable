@@ -5,6 +5,7 @@ class Actionable
     new Disable(".disabled")
     new Pushable(".pushable")    
     new Switcher('.activable')    
+    new Toggler(".toggler")
     
 $ ->
   new Actionable()
