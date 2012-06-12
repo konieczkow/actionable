@@ -1,6 +1,6 @@
 # Actionable
 
-Javascriptless declarative lib for common web page interactions using css classes data tags.
+Javascriptless declarative lib for defining common web page interactions html classes and data tags.
 
 
 ## Installation

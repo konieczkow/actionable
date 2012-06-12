@@ -1,6 +1,6 @@
 class Submit
 	constructor: (selector) -> 
-		$(selector).on 'click', this.on_click
+		$('body').on 'click', selector, this.on_click
 
 	on_click: (event) ->
 		$(this).parents('form').submit() 
