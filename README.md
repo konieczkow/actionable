@@ -2,7 +2,7 @@
 
 Actionable allows you to define common web page interactions without using javascript. 
 Interactions are define in html via data attributes.
-Bigest adavantage of using Ationable is keeping your javascript binding file short and avoiding long list of couple-line bindings.
+Bigest adavantage of using Ationable is keeping your javascript binding file short and avoiding long list of hard-to-navigate couple-line bindings.
 
 
 ## Installation
