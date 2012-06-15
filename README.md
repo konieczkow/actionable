@@ -1,10 +1,13 @@
 # Actionable
 
-Javascriptless declarative lib for defining common web page interactions. Actionable is unobtrusive jquery-based library.
-It allows you to keep your javascript binding file short and avoid long list of couple-line bindings.
+Actionable allows you to define common web page interactions without using javascript. 
+Interactions are define in html via data attributes.
+Bigest adavantage of using Ationable is keeping your javascript binding file short and avoiding long list of couple-line bindings.
 
 
 ## Installation
+
+Actionable requires jquery to run. 
 
 Add this line to your application's Gemfile:
 
@@ -24,17 +27,17 @@ Add classes to html elements to define behaviors.
 
 ### Form submit:
 
-    <div class="js_form_submit" /> 
-
+    <div data-action="submit" /> 
+    
 Click on div will submit the form (More precisely first ancestor element of type form in DOM tree will be submited)
 
 ### Link: 
 
-    <div class="js_link" data-link="http://google.com" />
+    <div data-action="link" data-link="http://google.com" />
 
 ### Disable: 
 
-    <div class="disable js_link" data-link="http://google.com" />
+    <div class="disable" data-action="link" data-link="http://google.com" />
 
 Click on div will do nothing unless disable class is removed.
 
@@ -50,16 +53,16 @@ Class will be removed as soon as mouse button is up or mouse cursor leaves div a
 
 ### Switcher: 
 
-    <div class="activable" />
-    <div class="activable" />
-    <div class="activable" />        
+    <div data-action="activable" />
+    <div data-action="activable" />
+    <div data-action="activable" />       
 
 Click on div will add a class 'active' to it, so in inspector it will look like this:
 
-    <div class="activable" />
-    <div class="activable active" />
-    <div class="activable" />        
-    
+    <div data-action="activable" />
+    <div data-action="activable" class="active" />
+    <div data-action="activable" />        
+
 Class will be removed as soon as you click on any of the other elements.
 
 This behavior can be customized (see Customization), by default it is initialized as follows:
@@ -72,19 +75,19 @@ First argument is selector of element to react on click. Second is the name of t
 
 Toggler switches visibility or class of an element. Here comes the visibility example:
 
-    <div class="toggler" data-target= "#toggled_div" />
+    <div data-action="toggle" data-target= "#toggled_div" />
     
 Click on div with class 'toggler' will toggle '#toggled_div'. If we're talking about toggling visibility, you can add a sliding effect:
 
-    <div class="toggler" data-target= "#toggled_div" data-effect="slide"/>
+    <div data-action="toggle" data-target= "#toggled_div" data-effect="slide"/>
 
 You can also force toggler to only show '#toggled_div' (not toggle):
 
-    <div class="toggler" data-target= "#toggled_div" data-effect="slide" data-mode="on"/>
+    <div data-action="toggle" data-target= "#toggled_div" data-effect="slide" data-mode="on"/>
 
 Finally you can toggle class. If you don't provide data-target, operation will be performed on clicked element.
 
-    <div class="toggler" data-class= "active" />
+    <div data-action="toggle" data-class= "active" />
     
 In the example above div of class 'toggler' will toggle it's active state on each click.
 
@@ -109,16 +112,6 @@ Add this line to javascript initialization:
 Now use "action-link" class to mark links in html code:
     
     <div class="action-link" data-link="http://google.com" />
-
-### Use data tags instead of classes:
-        
-Add selector with data tag in javascript initialization:
-
-    new Submit("data[acton='submit']");	
-
-And use following code in html:
-
-    <div data-action="submit" /> 
 
 ### Join multiple behaviors into new ones
 
