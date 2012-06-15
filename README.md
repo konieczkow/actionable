@@ -1,6 +1,7 @@
 # Actionable
 
-Javascriptless declarative lib for defining common web page interactions html classes and data tags.
+Javascriptless declarative lib for defining common web page interactions. Actionable is unobtrusive jquery-based library.
+It allows you to keep your javascript binding file short and avoid long list of couple-line bindings.
 
 
 ## Installation
