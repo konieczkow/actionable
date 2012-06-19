@@ -7,12 +7,12 @@ class Actionable
     new Switcher('.activable')    
     new Toggler(".toggler")
     
-    new Link("data[action~='link']")
-    new Submit("data[action~='submit']")
-    new Disable("data[action~='disable']")
-    new Pushable("data[action~='pushable']")    
-    new Switcher("data[action~='activate']")    
-    new Toggler("data[action~='toggle']")
+    new Link("[data-action~='link']")
+    new Submit("[data-action~='submit']")
+    new Disable("[data-action~='disable']")
+    new Pushable("[data-action~='pushable']")    
+    new Switcher("[data-action~='activate']")    
+    new Toggler("[data-action~='toggle']")
     
 $ ->
   new Actionable()
