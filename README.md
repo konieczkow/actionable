@@ -33,7 +33,17 @@ Click on div will submit the form (More precisely first ancestor element of type
 
 ### Link: 
 
+Click on following link will redirect browser to location given under data-link attribute.
+
     <div data-action="link" data-link="http://google.com" />
+    
+Click on following link will open a new popup window:    
+
+    <div data-action="link" type="popup" data-link="http://google.com" />
+
+You can also pass size arguments:
+
+    <div data-action="link" type="popup" data-link="http://google.com" data-width="400" data-height="300" />
 
 ### Disable: 
 
