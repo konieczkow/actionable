@@ -1,9 +1,9 @@
 class window.Disable
 
-	constructor: (selector) ->
-    document.addEventListener 'click', this.document_on_click, true		 
-	
-	document_on_click: (event) ->
+  constructor: (selector) ->
+    $(document).on 'click', this.document_on_click
+
+  document_on_click: (event) ->
     if $(event.target).hasClass("disabled")
-	    event.stopPropagation()
-	    event.preventDefault()
+      event.stopPropagation()
+      event.preventDefault()
