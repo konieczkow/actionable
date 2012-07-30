@@ -7,5 +7,5 @@ class window.Pushable
   on_mousedown: (event) =>
     $(event.target).addClass(@klass)
     
-  on_removeclass: () =>
+  on_removeclass: (event) =>
     $(event.target).removeClass(@klass)
