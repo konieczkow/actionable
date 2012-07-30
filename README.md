@@ -136,6 +136,11 @@ Now you can create pushable button that will submit a form with following html c
 
 
 ## Backlog
+- ajax
+ - error handling
+ - redirect handling
+ - overlay (default through: jquery.tools.overlay)
+ - spinner
 - introduce namespace behavior
  - copy to clipboard (?)
  - add default to toggler
