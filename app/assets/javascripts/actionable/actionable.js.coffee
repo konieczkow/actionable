@@ -6,13 +6,15 @@ class Actionable
     new Pushable(".pushable")    
     new Switcher('.activable')    
     new Toggler(".toggler")
-    
+    new EnterSubmit(".enter_submit")
+
     new Link("[data-action~='link']")
     new Submit("[data-action~='submit']")
     new Disable("[data-action~='disable']")
     new Pushable("[data-action~='pushable']")    
     new Switcher("[data-action~='activate']")    
     new Toggler("[data-action~='toggle']")
-    
+    new EnterSubmit("[data-action~='enter_submit']")
+
 $ ->
   new Actionable()
