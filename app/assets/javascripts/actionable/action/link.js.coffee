@@ -8,7 +8,11 @@ class window.Link
     if (target.data('type') == 'popup')
       this.open_popup(target) 
     else
-      window.location = target.data("link")
+      url = target.data("link")
+      if url[0] == "/"
+        window.location.pathname = target.data("link")
+      else
+        window.location = target.data("link")
     event.stopPropagation()		
 
 	open_popup: (target) =>
