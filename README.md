@@ -31,6 +31,12 @@ Add classes to html elements to define behaviors.
     
 Click on div will submit the form (More precisely first ancestor element of type form in DOM tree will be submited)
 
+### Enter submit:
+
+    <form data-action="enter_submit" />
+
+Pushing enter key will submit the form. Useful for forms without submit button
+
 ### Link: 
 
 Click on following link will redirect browser to location given under data-link attribute.
