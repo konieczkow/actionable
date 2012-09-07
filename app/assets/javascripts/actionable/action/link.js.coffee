@@ -20,7 +20,8 @@ class window.Link
     defaultOptions = {
       title: '',
       width: 600,
-      height: 800
+      height: 800,
+      resizable: 1
     }
     options = new Options(defaultOptions)
     options.addAllFromElementData(target, 'title')
