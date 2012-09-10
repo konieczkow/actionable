@@ -21,7 +21,7 @@ class window.Link
       title: '',
       width: 600,
       height: 800,
-      resizable: 1
+      scrollbars: 'auto'
     }
     options = new Options(defaultOptions)
     options.addAllFromElementData(target, 'title')
