@@ -9,10 +9,7 @@ class window.Link
       this.open_popup(target) 
     else
       url = target.data("link")
-      if url[0] == "/"
-        window.location.pathname = target.data("link")
-      else
-        window.location = target.data("link")
+      window.location = target.data("link")
     event.stopPropagation()		
 
 	open_popup: (target) =>
