@@ -12,8 +12,8 @@ class @Options
       @options[key] = value
 
   addFromElementData: (target, name) =>
-    this.add(name, target.data(name))
+    @add(name, target.data(name))
 
   addAllFromElementData: (target) =>
     for key, value of @options
-      this.addFromElementData(target, key)      
+      @addFromElementData(target, key)      

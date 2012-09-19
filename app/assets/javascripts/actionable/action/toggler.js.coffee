@@ -2,18 +2,18 @@ class @Toggler
 
   constructor: (selector) ->
     @elements = $(selector)
-    @elements.on 'click', this.on_event
+    @elements.on 'click', @on_event
 
   on_event: (event) =>
     delegateTarget = $(event.delegateTarget)
-    destination = this.get_destination(delegateTarget)
-    effect = this.get_effect(delegateTarget)
-    mode = this.get_mode(delegateTarget)
-    klass = this.get_class(delegateTarget)
+    destination = @get_destination(delegateTarget)
+    effect = @get_effect(delegateTarget)
+    mode = @get_mode(delegateTarget)
+    klass = @get_class(delegateTarget)
     if (klass)
-      this.toggle_class(destination, mode, klass)
+      @toggle_class(destination, mode, klass)
     else
-      this.toggle_visibility(destination, mode, effect)
+      @toggle_visibility(destination, mode, effect)
 
   get_class: (delegateTarget) ->
     klass = delegateTarget.data('class')
@@ -41,7 +41,7 @@ class @Toggler
 
   toggle_visibility: (toggle_target, mode, effect) ->
     if (mode == "toggle")
-      this.do_toggle_visibility(toggle_target, effect)
+      @do_toggle_visibility(toggle_target, effect)
     else if (mode == "on")
       toggle_target.show()
     else if (mode == "off")    
