@@ -1,4 +1,4 @@
-class window.Options
+class @Options
   constructor: (defaultOptions) ->
     @options = defaultOptions
     

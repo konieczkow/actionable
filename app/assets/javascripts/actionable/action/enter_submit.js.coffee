@@ -1,4 +1,4 @@
-class window.EnterSubmit
+class @EnterSubmit
   constructor: (selector) ->
     $('body').on 'keydown', "#{selector} input", this.on_keydown
 

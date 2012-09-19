@@ -1,4 +1,4 @@
-class window.Disable
+class @Disable
 
 	constructor: (selector) ->
     if document.addEventListener

@@ -1,4 +1,4 @@
-class window.Switcher
+class @Switcher
   constructor: (@element_selector, @active_class = "active", @ancestor_selector = 'body') ->
     $(@ancestor_selector).on 'click', @element_selector, this.activable_on_click
 

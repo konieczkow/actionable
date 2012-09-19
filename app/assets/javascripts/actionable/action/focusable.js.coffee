@@ -1,4 +1,4 @@
-class window.Focusable
+class @Focusable
   constructor: (clickable_selector, @focusable_selector) ->
     $(clickable_selector).on 'click', this.clickable_on_click
     

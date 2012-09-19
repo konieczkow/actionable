@@ -1,4 +1,4 @@
-class window.Link
+class @Link
 	constructor: (selector) ->
 		$('body').on 'click', selector, this.on_click
 		 

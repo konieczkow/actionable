@@ -1,4 +1,4 @@
-class window.Toggler
+class @Toggler
 
   constructor: (selector) ->
     @elements = $(selector)

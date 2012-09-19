@@ -1,4 +1,4 @@
-class window.Pushable
+class @Pushable
   constructor: (selector, @klass = "pushed") ->
     $(selector).on 'mousedown', this.on_mousedown
     $(selector).on 'mouseleave', this.on_removeclass
