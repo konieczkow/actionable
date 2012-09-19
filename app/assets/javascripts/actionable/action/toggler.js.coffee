@@ -52,7 +52,6 @@ class @Toggler
       toggle_class()
 	  
   toggle_class: (toggle_target, mode, klass) ->
-    console.log(mode)
     if (mode == "toggle")
       toggle_target.toggleClass(klass)
     else if (mode == "on")

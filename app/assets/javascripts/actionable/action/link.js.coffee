@@ -1,12 +1,12 @@
 class @Link
 	constructor: (selector) ->
-		$('body').on 'click', selector, this.on_click
+		$('body').on 'click', selector, @on_click
 		 
 	on_click: (event) =>
     target = $(event.currentTarget)
 
     if (target.data('type') == 'popup')
-      this.open_popup(target) 
+      @open_popup(target) 
     else
       url = target.data("link")
       window.location = target.data("link")
