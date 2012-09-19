@@ -17,21 +17,19 @@ class @Toggler
 
   get_class: (delegateTarget) ->
     klass = delegateTarget.data('class')
-    return klass if klass?
-    undefined
+    if klass? then klass else undefined
 
   get_mode: (delegateTarget) ->
     mode = delegateTarget.data('mode')
-    return mode if mode?
-    "toggle"
+    if mode? then mode else "toggle"
 
   get_effect: (delegateTarget) ->
     delegateTarget.data('effect')
     
   get_destination: (delegateTarget) ->
     target = delegateTarget.data('target')
-    return $(target) if target?
-    @elements
+    if target? then $(target) else @elements 
+    
 
   do_toggle_visibility: (toggle_target, effect) ->
     if (effect == "slide")
@@ -40,22 +38,17 @@ class @Toggler
       toggle_target.toggle()
 
   toggle_visibility: (toggle_target, mode, effect) ->
-    if (mode == "toggle")
-      @do_toggle_visibility(toggle_target, effect)
-    else if (mode == "on")
-      toggle_target.show()
-    else if (mode == "off")    
-      toggle_target.hide()
+    switch mode
+      when "toggle" then @do_toggle_visibility(toggle_target, effect)
+      when "on" then toggle_target.show()
+      when "off" then toggle_target.hide()
+      
       
   toggle: (event_target, toggle_target) ->
-    if (event_target.data('class')?)
-      toggle_class()
+    toggle_class() if event_target.data('class')?
 	  
   toggle_class: (toggle_target, mode, klass) ->
-    if (mode == "toggle")
-      toggle_target.toggleClass(klass)
-    else if (mode == "on")
-      toggle_target.addClass(klass)
-    else if (mode == "off")    
-      toggle_target.removeClass(klass)	
-
+    switch mode
+      when "toggle" then toggle_target.toggleClass(klass)
+      when "on" then toggle_target.addClass(klass)
+      when "off" then toggle_target.removeClass(klass)   
